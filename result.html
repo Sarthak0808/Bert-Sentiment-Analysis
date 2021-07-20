@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Prediction Model</title>
+    {% load static %}
+     <link rel="stylesheet" type="text/css" href="{% static 'style.css'%}">
+</head>
+
+<body>
+    <div class="hdr-bg"></div>
+    <header id="hdr">
+
+        <div class="content-wrap">
+
+            <h1>The Predicted Result: {{answer}} </h1>
+            <h2>
+                Sentiment Analysed:
+                -- 0 Negative
+                -- 1 Average
+                -- 2 Neutral
+                -- 3 Good
+                -- 4 Positive
+            </h2>
+
+        </div>
+    </header>
+
+<a href="{% url 'home'%}">Click here to go back.</a>
+</body>
+</html>

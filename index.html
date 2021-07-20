@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Prediction Model</title>
+    {% load static %}
+     <link rel="stylesheet" type="text/css" href="{% static 'style.css'%}">
+</head>
+
+<body>
+    <div class="hdr-bg"></div>
+    <header id="hdr">
+
+        <div class="content-wrap">
+            <h1>Welcome to  Bert Sentiment Analyzer</h1>
+
+
+        </div>
+
+    </header>
+
+
+            <form action="{% url 'result' %}" class="content">
+                 <div class="form">
+                     {% csrf_token %}
+           Enter the phrase: <input type="text" required name="Phrases" autocomplete="off" size="100">
+
+            <input type="submit" name="" value="submit" size="70">
+                     </div>
+        </form>
+
+
+
+
+</body>
+</html>
+
+
+
